@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, user-scale=0"/>
-
     <!--Meta Tag Social Sharing-->
     <meta property="og:url" content="https://adrianomisina.github.io/atmosphere_jkd_site_new_version/"/> <!--link da url do site-->
     <meta property="og:type" content="website"/>
@@ -11,37 +10,49 @@
     <meta property="og:description" content="Jeet Kune Do Fighting System"/>
     <meta property="og:image" content="	https://adrianomisina.github.io/atmosphere_jkd_site_new_version/imagem/bg.jpg"/> <!--link da url da imagem-->
     <!--Meta Tag Social Sharing-->
-
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector(".menumobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') { 
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+        </script>  
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Atmosphere JKD</title>
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="imagem/logo.jpg">
-            </div>
-        </div>
-
-        <div class="menu">
-            <nav>
-                <div class="menumobile">
-                    <div class="mm_line"></div>
-                    <div class="mm_line"></div>
-                    <div class="mm_line"></div>
+        <div class="container">
+            <div class="container_logo">
+                <div class="logo">
+                    <img src="imagem/logo.jpg">
                 </div>
+            </div>
 
-                <ul class="active">
-                    <li><a href="#sobre">SOBRE</a></li>
-                    <li><a href="#depoimentos">DEPOIMENTOS</a></li>
-                    <li><a href="#atmosphere_jkd_videos">VIDEOS</a></li>
-                    <li><a href="#cursos">CURSOS</a></li>
-                    <li><a href="#ebooks">E-BOOKS</a></li>
-                    <li><a href="#contato">CONTATO</a></li>
-                </ul> <!-- active -->   
-            </nav>
-        </div>
+            <div class="menu">
+                <nav>
+                    <div class="menumobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+
+                    <ul class="active">
+                        <li><a href="#sobre">SOBRE</a></li>
+                        <li><a href="#depoimentos">DEPOIMENTOS</a></li>
+                        <li><a href="#atmosphere_jkd_videos">VIDEOS</a></li>
+                        <li><a href="#cursos">CURSOS</a></li>
+                        <li><a href="#ebooks">E-BOOKS</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
+                    </ul> <!-- active -->   
+                </nav>
+            </div>
+        </div>        
     </header>
     <main>
         <section class="banner">
@@ -55,7 +66,7 @@
         </section>
         <section id="sobre">
             <div class="sobre_titulo">
-                Sobre 
+                Sobre:
             </div>
             <div class="sobre_titulo_desc">
                 Quem Somos?
@@ -79,7 +90,7 @@
         <section id="depoimentos">
 
             <div class="depoimentos_titulo">
-                Depoimentos
+                Depoimentos:
             </div>
             <div class="depoimentos_titulo_desc">
                 Conheça Nossa Equipe
@@ -177,7 +188,7 @@
         <section id="atmosphere_jkd_videos">
 
             <div class="atmosphere_jkd_videos_titulo">
-                Atmosphere JKD Vídeos
+                Atmosphere JKD Vídeos:
             </div>
 
             <div class="atmosphere_jkd_videos_titulo_desc">
@@ -205,7 +216,7 @@
         <section id="cursos">
 
             <div class="cursos_titulos">
-                Atmosphere JKD Online
+                Atmosphere JKD Online:
             </div>
 
             <div class="curso_titulos_desc">
@@ -280,25 +291,118 @@
         </section>
 
         <section id="ebooks">
-            <div class="ebboks_titulo">
-                Atmosphere JKD E-books
+            <div class="ebooks_titulo">
+                Atmosphere JKD E-books:
             </div>
 
             <div class="ebooks_titulo_desc">
-                Guia Prático de Treinamento
+                Bônus Incríveis 100% Grátis!
             </div>
 
+            <div class="ebook1_body">
 
+                <div class="ebook1_desc_left">
 
+                    <h4>e-Book 1: CURSO BÁSICO JKD</h4>
+
+                    <p>Um e-book totalmente grátis com dicas e explicações 
+                    detalhadas de como realizar um treino sozinho, com eficiência, 
+                    em qualquer lugar.</p>
+
+                    <p>Além do e-book, há um módulo exclusivo onde eu mostro em vídeo
+                    passo a passo como realizar o treinamento com todos os elementos
+                    apresentados durante o Curso 1.</p>
+
+                    <a href="" target="_blank"  class="button">Download</a> 
+                    <!--colocar o link da landpage para baixar e-book1-->
+                </div>                    
+
+                <div class="ebook1_desc_right">
+
+                    <div class="ebook1_desc_right img">
+                        <img src="imagem/ebook1.jpg">
+                    </div>
+
+                </div>
+            </div>
+
+            <br /><br />
+
+            <div class="ebook2_body">
+
+                <div class="ebook2_desc_left">
+
+                    <h4>e-Book 2: EXPLOSIVE FULL TRAINING JKD</h4>
+
+                    <p>Este e-Book acompanha o Curso 2: Explosive Full Training JKD.
+                    Uma prévia sobre os principais Drills para melhoria da velocidade, força e precisão.</p>
+
+                    <a href="" target="_blank"  class="button">Download</a> 
+                    <!--colocar o link da landpage para baixar e-book1-->
+                </div>                  
+
+                <div class="ebook2_desc_right">
+
+                    <div class="ebook2_desc_right img">
+                        <img src="imagem/ebook2.jpg">
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="botao_compra">
+                <a href="https://pay.hotmart.com/O18559047Q?checkoutMode=10" target="_blank" class="button">SIM, QUERO COMEÇAR O ATMOSPHERE JKD ONLINE !!!</a> 
+            </div>
         </section>
 
+        <footer id="contato">
+
+            <div class="contato_titulo">
+                Contato:
+            </div>
+
+            <div class="contato_titulo_desc">
+                Atmosphere JKD
+            </div>
+
+            <div class="contato_body">
+                <div class="contato_form">
+                    <div class="footer--item_area3">
+                        <form id="form_atmosphere" action="https://formspree.io/maypoqgd"method="POST">
+                            <labe>
+                                <input type="email" name="email" placeholder="EMAIL TO SUBSCRIBE"/>
+                            </labe>
+
+                            <label>
+                                <input type="text" name="mensagem" placeholder="YOUR MESSAGE"/> 
+                            </label>
 
 
+                            <div class="button_form">
+                                <button class="button" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="redes_sociais">
+
+                    <h4>Atmosphere Jeet Kune Do - Redes Sociais:</h4>
+
+                    <a href="https://www.facebook.com/atmospherejeetkunedo"><img src="imagem/face_logo.jpg" class="facebook"></a>
+                    <a href="https://www.instagram.com/atmospherejeetkunedo/"><img src="imagem/insta_logo.jpg" class="insta"></a>
+                    <a href="https://www.youtube.com/channel/UCKYSu8L8gXIcRjXQASw11sw?view_as=subscriber"><img src="imagem/youtube_logo.jpg" class="youtube"></a>
 
 
+                    <h5>Aulas Particulares e Seminários:</h5>
+                    <br />
+                    <p><a href="mailto:contato@treinodelutaemcasa.com.br">contato@treinodelutaemcasa.com.br</a></p>
+                    <br />
+                    <p><a href="tel:11-94586-1188">whatsapp: +55 (11) 94586-1188</a></p>
 
+                </div>
 
-
+        </footer>
 
     </main>
     

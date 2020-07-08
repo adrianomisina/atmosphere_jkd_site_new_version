@@ -14,20 +14,17 @@ header {
     background-color: rgb(2, 2, 2)
 }
 
-.logo {
-    width:100px;
-}
-
 .logo img {
     width: 160px;
     height: auto;
     margin-top: 55px;
     margin-left: 30px;
     border: 1px solid #000000;
+    padding-top:20px;
 }
-.header-container {
+.container_logo {
     max-width:1140px;
-    height:50px;
+    height:20px;
     margin:auto;
     display: flex;
     align-items: center;
@@ -39,36 +36,37 @@ header {
     justify-content: flex-end; 
 }
 
-.menu ul,
-.menu li {
+nav ul, nav li {
     list-style: none;
+    margin:0px;
+    padding: 0px;
 }
 
-.menu ul{
+.menu nav ul{
     display:flex;
     align-items: center;  
 }
 
-.menu li a {
-    color:#CCC;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-decoration: none;
-    margin-right: 60px;
-    padding-bottom: 5px;
-    height:auto;
+nav ul{
     display:flex;
-    align-items:center;
-    border-bottom:2px solid #000;
 }
-
-.menu li a:hover {
-    border-bottom:2px solid #8d110c;
-    text-align: center;
-    padding-bottom: 5px;
-    color: #ffffff;
+nav a {
+    display: block;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: uppercase;
+    color:#999;
+    border-bottom:5px solid #000;
+    
+}
+nav a:hover{
+    border-bottom:5px solid #b11a15b2;
+    color:floralwhite;
     transition:all 1s linear;
 }
+
 
 .banner {
     background-image:url('imagem/bg.jpg');
@@ -135,7 +133,7 @@ header {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 20px;
-    color:rgb(102, 100, 100)
+    color:rgb(0, 0, 0)
 }
 
 .sobre_titulo_desc {
@@ -276,7 +274,7 @@ header {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 20px;
-    color:rgb(102, 100, 100)
+    color:rgb(0, 0, 0)
 }
 
 .atmosphere_jkd_videos_titulo_desc {
@@ -444,7 +442,7 @@ header {
     background-color:#000;
 }
 
-.ebboks_titulo,
+.ebooks_titulo,
 .ebooks_titulo_desc {
     text-align:center;
     text-transform: uppercase;
@@ -458,4 +456,161 @@ header {
     color:#999;
     margin-top:10px;
     margin-bottom:40px;
+}
+
+.ebook1_body {
+    display: flex;
+    max-width:1140px;
+    margin: auto;
+}
+
+.ebook1_desc_left{
+    flex:1;
+}
+
+.ebook1_desc_left h4 {
+    color: #b11a15;
+    font-size: 20px;
+    margin-bottom:20px;
+}
+
+.ebook1_desc_left p {
+    color:floralwhite;
+    text-align:justify;
+    line-height:25px;
+    margin-right:40px;
+    margin-bottom: 30px;
+}
+
+.ebook1_desc_left a {
+    font-size:13px;
+}
+
+.ebook1_desc_right img{
+    width:520px; 
+}
+
+.ebook2_body {
+    display: flex;
+    max-width:1140px;
+    margin: auto;
+}
+
+.ebook2_desc_left{
+    flex:1;
+}
+
+.ebook2_desc_left h4 {
+    color: #b11a15;
+    font-size: 20px;
+    margin-bottom:20px;
+}
+
+.ebook2_desc_left p {
+    color:floralwhite;
+    text-align:justify;
+    line-height:25px;
+    margin-right:40px;
+    margin-bottom: 30px;
+}
+
+.ebook2_desc_left a {
+    font-size:13px;
+}
+
+.ebook2_desc_right img {
+    width:520px; 
+}
+
+.botao_compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#contato {
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color:floralwhite;
+}
+
+.contato_titulo,
+.contato_titulo_desc {
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+}
+
+.contato_titulo_desc  {
+    font-size:12px;
+    color:#999;
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+.contato_body{
+    display: flex;
+    max-width:1140px;
+    margin: auto;
+}
+
+.redes_sociais{
+    flex:1;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.redes_sociais h4 {
+    color: #b11a15;
+    font-size: 20px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+}
+
+.redes_sociais h5 {
+    color: #b11a15;
+    font-size: 20px;
+    margin-top:20px;
+    text-transform: uppercase;
+}
+
+.facebook,
+.insta,
+.youtube {
+    margin-right:10px;
+}
+
+.contatos_finais h4 {
+    color: #b11a15;
+    font-size: 20px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+}
+
+.footer--item_area3 form {
+    border: 2px solid rgb(109, 14, 14);
+    background-color:rgb(32, 31, 31);
+    text-align:center;
+    padding:30px;
+}
+.footer--item_area3 input {
+    width:100%;
+    height:50px;
+    border:0;
+    background:transparent;
+    border-bottom:2px solid rgb(109, 14, 14);
+    outline:0;
+    color:floralwhite;
+}
+
+.button_form{
+    margin-top:5px;
+}
+
+.button_form .button{
+    font-size:12px;
+    cursor: pointer;
 }
