@@ -1,39 +1,45 @@
-* {
+body, html, main, section{
     margin:0;
     padding:0;
-    box-sizing:border-box;
-}
-
-body{
     font-family:'Montserrat', Arial, Helvetica, sans-serif;
     font-size:14px;
 }
 
-header {
-    height: 100px;
-    background-color: rgb(2, 2, 2)
+header{
+    height:100px;
+    background-color:rgb(0, 0, 0);
 }
 
-.logo img {
-    width: 160px;
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container img {
+    margin-top: 10px;
+    margin-left: 66px;
+    width: 170px;
     height: auto;
-    margin-top: 55px;
-    margin-left: 30px;
-    border: 1px solid #000000;
-    padding-top:20px;
-}
-.container_logo {
-    max-width:1140px;
-    height:20px;
-    margin:auto;
-    display: flex;
-    align-items: center;
 }
 
-.menu{
-    flex:1;
-    display: flex;
-    justify-content: flex-end; 
+.menu {
+    margin-top: 30px;
+    margin-right: 66px;    
+}
+
+.menumobile{
+    display: none;
+    width:40px;
+    height:40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: rgb(63, 0, 0);;
 }
 
 nav ul, nav li {
@@ -42,31 +48,26 @@ nav ul, nav li {
     padding: 0px;
 }
 
-.menu nav ul{
-    display:flex;
-    align-items: center;  
-}
-
 nav ul{
     display:flex;
 }
+
 nav a {
     display: block;
-    margin-left: 10px;
-    margin-right: 50px;
-    margin-top: 20px;
+    padding: 12px;
     text-decoration: none;
     text-align: uppercase;
-    color:#999;
-    border-bottom:5px solid #000;
+    color: floralwhite;
+    border-bottom:1px solid #000;
     
 }
+
 nav a:hover{
-    border-bottom:5px solid #b11a15b2;
-    color:floralwhite;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    border-bottom:1px solid #b11a15b2;
     transition:all 1s linear;
 }
-
 
 .banner {
     background-image:url('imagem/bg.jpg');
@@ -309,15 +310,6 @@ nav a:hover{
 .playlist iframe {
     padding:5px;
     width:520px;  
-}
-
-#beneficios {
-    background-image:url('imagem/bg_bene.jpg');
-    height: 100vh;
-    width:auto;
-    background-size:cover;
-    background-position:bottom;
-    overflow:hidden;
 }
 
 .beneficios_body{
@@ -614,3 +606,372 @@ nav a:hover{
     font-size:12px;
     cursor: pointer;
 }
+
+@media (max-width:770px){
+
+    .body, html, section, main {
+        margin:auto;
+        padding:auto;
+    }
+
+    header{
+        width:auto;
+        height: auto;
+    }
+
+  
+    .menu{
+        justify-content: space-around;
+    }
+
+     .container{
+        flex-direction: column;
+    }
+
+      header.container {
+       flex-direction: column;
+   }
+
+   nav ul {
+       flex-direction: column;
+       display: none;
+       position: absolute;
+       left: 0;
+       width: 100%;
+       background-color:rgb(0, 0, 0);
+   }
+
+   header {
+       height:auto;
+       background-color: rgb(0, 0, 0);
+   }
+
+   .container img {
+        margin-bottom:-133px;
+        width: 210px;
+        margin-top: 10px;
+        margin-left: 60px;
+        height: auto;
+   }
+
+   .menumobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+   }
+
+   .sobre_body {
+    display: flex;
+    flex-direction: column;
+}
+
+    .sobre_body_desc_left {
+        text-align: center;
+    }
+
+    .sobre_body_desc_left .button{
+       
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #b11a15;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 1px solid #b11a15;   
+    }
+
+    .sobre_body_desc_left p {
+        font-size: 14px;
+        line-height: 25px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: justify;
+    }
+
+    .video_sobre iframe {
+        margin:auto;
+        width: 100%;
+        padding-top: 41px;
+    }
+
+    .banner {
+        background-image: url(imagem/bg.jpg);
+        height: auto;
+        width: auto;
+        background-size: cover;
+        background-position: bottom;
+        overflow: hidden;
+}
+
+    .banner .button {
+        margin-top: 20px;
+        margin-bottom: 17px;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: #b11a15;
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 10px 30px;
+        border: 1px solid #b11a15;
+    }
+
+    .banner h1{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .banner h2 {
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .video_depoimentos h2 {
+        color: #b11a15;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+
+    .video_dep iframe{
+        margin:auto;
+        width: 100%;
+        padding-top: 41px;
+    }
+
+    .depoimentos_body {
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+    }
+
+    .video_depoimentos p {
+        color: floralwhite;
+        line-height: 25px;
+        text-align: justify;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .depoimento_desc {
+        color: floralwhite;
+        text-align: justify;
+        line-height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .depoimentos_img {
+        text-align: center; 
+        margin:0;
+    }
+
+    .depoimentos_img img {
+        width: 260px;
+        border-radius: 20px;
+    }
+
+    .depoimentos_tales_img {
+        text-align: center; 
+        margin:0;
+    }
+
+    .depoimentos_tales_img img {
+        width: 240px;
+        border-radius: 20px;
+        margin-right: 0;
+    }
+
+    .depoimento_desc h4 {
+        color: #b11a15;
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .depoimentos_gil_img{
+        text-align: center; 
+        margin:0;
+    }
+
+    .depoimentos_gil_img img {
+        width: 260px;
+        border-radius: 20px;
+        margin-right:0;
+    }
+
+    .depoimentos_video iframe{
+        margin:auto;
+        width: 100%;
+    }
+
+    .playlist {
+        display:block;
+    }
+
+    .playlist1,
+    .playlist2 {
+        display:block;
+        width: auto;
+        padding:0px;
+        margin:0px;
+    }
+
+    .playlist iframe {
+        padding:0px;
+    }
+
+    .playlist1 iframe {
+        margin:auto;
+        width: 100%;
+    }
+    
+    
+    .playlist2 iframe {
+        margin:auto;
+        width: 100%;
+    }
+
+    .curso_basico_jkd,
+    .curso_explosive_jkd,
+    .curso_combos_jkd{
+        text-align: center;
+    }
+
+    .cursos_basico_body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .curso_basico_jkd p,
+    .curso_explosive_jkd p,
+    .curso_combos_jkd p {
+        color: #000;
+        text-align: justify;
+        line-height: 25px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin:0px;
+    }
+
+    .curso_basico_jkd_right_video iframe {
+        margin-top: 30px;
+        border:0px;
+        width: 100%
+    }
+
+   .cursos_explosive_body {
+        display: flex;
+        flex-direction: column; 
+   }
+
+   .curso_explosive_jkd_right_video iframe {
+        margin-top: 30px;
+        border:0px;
+        width: 100%;
+   }
+
+   .cursos_combos_body {
+        display: flex;
+        flex-direction: column; 
+   }
+
+   .cursos_combos_body iframe {
+        margin-top: 30px;
+        border:0px;
+        width: 100%
+   }
+
+   .ebook1_body {
+        display: flex;
+        flex-direction: column; 
+   }
+
+   .ebook1_desc_right img {
+        margin-top: 30px;
+        width: 100%;
+   }
+
+   .ebook1_desc_left h4 {
+        text-align: center;
+        color: #b11a15;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ebook2_body {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .ebook2_desc_right img {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .botao_compra .button {
+        margin-top: 20px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        background-color: #b11a15;
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 10px 30px;
+        border: 1px solid #b11a15;
+    }
+
+    .contato_body {
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .redes_sociais {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .redes_sociais h4 {
+        color: #b11a15;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .redes_sociais h5 {
+        color: #b11a15;
+        font-size: 13px;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+
+    .ebook1_body,
+    .ebook2_body {
+        text-align: center;
+    }
+
+    .ebook1_desc_left p,
+    .ebook2_desc_left p {
+        text-align: justify;
+        line-height: 25px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin:0px;
+    }
+
+
+
+
+
+    
+}
+
+  
