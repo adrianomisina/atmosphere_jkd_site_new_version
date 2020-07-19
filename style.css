@@ -575,6 +575,14 @@ nav a:hover{
     margin-right:10px;
 }
 
+#contato {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: floralwhite;
+}
+
 .contatos_finais h4 {
     color: #b11a15;
     font-size: 20px;
