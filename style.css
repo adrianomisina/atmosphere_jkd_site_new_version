@@ -312,12 +312,119 @@ nav a:hover{
     width:520px;  
 }
 
-.beneficios_body{
+.beneficios_body {
     width:100vw;
     height:100%;
     background-color:rgba(0, 0, 0, 0.3);
 }
 
+#atmosphere_linhagem {
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color:#000;
+}
+
+.atmosphere_linhagem_titulo,
+.atmosphere_linhagem_titulo_desc {
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    color:floralwhite;
+}
+
+.atmosphere_linhagem_titulo_desc {
+    font-size:12px;
+    color:#999;
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+.atmosphere_linhagem_body{
+    display: flex;
+    max-width:1140px;
+    margin: auto;
+}
+
+.michael_rayas_desc_left {
+    flex:1;
+}
+
+.michael_rayas_desc_left h4{
+    color: #b11a15;
+    font-size: 20px;
+    margin-bottom:20px;
+}
+
+.michael_rayas_desc_left p {
+    color:floralwhite;
+    text-align:justify;
+    line-height:25px;
+    margin-right:40px;
+    margin-bottom: 30px;
+}
+
+.michael_rayas_right img {
+    width:250px;  
+}
+
+.clint_body{
+    display: flex;
+    max-width:1140px;
+    margin: auto;
+}
+
+.clint_desc_left{
+    flex:1;
+}
+
+.clint_desc_left h4 {
+    color: #b11a15;
+    font-size: 20px;
+    margin-bottom:20px;
+}
+
+.clint_desc_left p{
+    color:floralwhite;
+    text-align:justify;
+    line-height:25px;
+    margin-right:40px;
+    margin-bottom: 30px; 
+}
+
+.clint_desc_right img {
+    width:250px;  
+    margin-top: 30px;
+}
+
+.adriano_body {
+    display: flex;
+    max-width:1140px;
+    margin: auto;
+}
+
+.adriano_desc_left{
+    flex: 1;
+}
+
+.adriano_desc_left h4 {
+    color: #b11a15;
+    font-size: 20px;
+    margin-bottom:20px;
+}
+
+.adriano_desc_left p {
+    color:floralwhite;
+    text-align:justify;
+    line-height:25px;
+    margin-right:40px;
+    margin-bottom: 30px; 
+}
+
+.adriano_desc_right img {
+    width:250px;  
+    margin-top: 30px;
+}
 
 #cursos {
     padding-top:50px;
@@ -989,6 +1096,113 @@ nav a:hover{
     .facebook_iframe {
         margin: 10px;
     }
+
+    .atmosphere_linhagem_body {
+        display: flex;
+        flex-direction: column; 
+        margin:auto;
+    }
+
+    .atmosphere_linhagem_titulo,
+    .atmosphere_linhagem_titulo_desc {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 18px;
+        color: floralwhite;
+    }
+
+    .atmosphere_linhagem_titulo_desc {
+        font-size: 12px;
+        color: #999;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .michael_rayas_desc_left h4 {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        color: #b11a15;
+        font-size: 20px;
+        margin-bottom: 20px; 
+    }
+
+    .michael_rayas_desc_left p {
+        color: floralwhite;
+        margin: auto;
+        color: floralwhite;
+        text-align: justify;
+        line-height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .michael_rayas_right img {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .clint_body {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .clint_desc_left h4 {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        color: #b11a15;
+        font-size: 20px;
+        margin-bottom: 20px; 
+    }
+
+    .clint_desc_left p{
+        color: floralwhite;
+        margin: auto;
+        color: floralwhite;
+        text-align: justify;
+        line-height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .clint_desc_right img {
+        width:100%;
+        margin-top: 30px;
+    }
+
+    .adriano_body {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .adriano_desc_left h4 {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        color: #b11a15;
+        font-size: 20px;
+        margin-bottom: 20px; 
+    }
+
+    .adriano_desc_left p{
+        color: floralwhite;
+        margin: auto;
+        color: floralwhite;
+        text-align: justify;
+        line-height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .adriano_desc_right img {
+        width:100%;
+        margin-top: 30px;
+    }
+
 
 
 
